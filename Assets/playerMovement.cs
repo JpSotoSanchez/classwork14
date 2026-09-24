@@ -51,7 +51,7 @@ public class playerMovement : MonoBehaviour
         switch (i)
         {
             case(1):
-                trans.rotation = new Quaternion(trans.rotation.x+90, trans.rotation.y, trans.rotation.z, 1);
+                trans.rotation = new Quaternion(trans.rotation.x, trans.rotation.y, trans.rotation.z+2, 1);
             break;
             
             case(2):
