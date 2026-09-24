@@ -55,7 +55,7 @@ public class playerMovement : MonoBehaviour
             break;
             
             case(2):
-                trans.position = new Vector3(Random.Range(-20.0f, 10.0f), Random.Range(-10.0f, 10.0f),0);
+                trans.position = new Vector3(Random.Range(-38.0f, 38.0f), Random.Range(-20.0f, 20.0f),0);
             break;
             
             case(3):
