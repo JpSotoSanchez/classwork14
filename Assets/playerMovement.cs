@@ -47,15 +47,15 @@ public class playerMovement : MonoBehaviour
 
     public void power(int i)
     {
+        Transform trans = this.transform;
         switch (i)
         {
             case(1):
-                Transform trans = this.transform;
                 trans.rotation = new Quaternion(trans.rotation.x+90, trans.rotation.y, trans.rotation.z, 1);
             break;
             
             case(2):
-            
+                trans.position = new Vector3(Random.Range(-20.0f, 10.0f), Random.Range(-10.0f, 10.0f),0);
             break;
             
             case(3):
