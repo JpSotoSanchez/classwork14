@@ -59,7 +59,7 @@ public class playerMovement : MonoBehaviour
             break;
             
             case(3):
-
+                trans.localScale = new Vector3(trans.localScale.x * 1.1f, trans.localScale.y * 1.1f, 0);
             break;
             default:
             break;
