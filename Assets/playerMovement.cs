@@ -41,7 +41,7 @@ public class playerMovement : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
             counter = 0;
-            StartCoroutine(DoAfterDelay(3.0f));
+            StartCoroutine(DoAfterDelay(1.0f));
         }
     }
 
@@ -51,7 +51,7 @@ public class playerMovement : MonoBehaviour
         switch (i)
         {
             case(1):
-                trans.rotation = new Quaternion(trans.rotation.x, trans.rotation.y, trans.rotation.z+3.1416f, 1);
+                trans.rotation *= Quaternion.Euler(0, 0, 90f);
             break;
             
             case(2):
@@ -59,7 +59,7 @@ public class playerMovement : MonoBehaviour
             break;
             
             case(3):
-            
+
             break;
             default:
             break;
