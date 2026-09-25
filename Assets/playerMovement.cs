@@ -51,11 +51,11 @@ public class playerMovement : MonoBehaviour
         switch (i)
         {
             case(1):
-                trans.rotation = new Quaternion(trans.rotation.x+90, trans.rotation.y, trans.rotation.z, 1);
+                trans.rotation = new Quaternion(trans.rotation.x, trans.rotation.y, trans.rotation.z+2, 1);
             break;
             
             case(2):
-                trans.position = new Vector3(Random.Range(-20.0f, 10.0f), Random.Range(-10.0f, 10.0f),0);
+                trans.position = new Vector3(Random.Range(-38.0f, 38.0f), Random.Range(-20.0f, 20.0f),0);
             break;
             
             case(3):
